@@ -4,6 +4,8 @@
 
 ### Generate Docker Images for each service
 
+From the `root` of the cloned repository execute the commands below.
+
 ```
 ./service1/gradlew jibDockerBuild -p ./service1/ --image=rommik-service1 &&
 ./graphql-server/gradlew jibDockerBuild -p ./graphql-server --image rommik-graphql
