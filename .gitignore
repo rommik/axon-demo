@@ -1,0 +1,7 @@
+axon-server/config/*
+axon-server/data/*
+axon-server/events/*
+.DS_Store
+!axon-server/config/README.md
+!axon-server/data/README.md
+!axon-server/events/README.md

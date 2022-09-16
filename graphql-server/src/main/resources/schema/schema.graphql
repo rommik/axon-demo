@@ -1,0 +1,12 @@
+type Query {
+    shows(titleFilter: String): [Show]
+}
+
+type Show {
+    title: String
+    releaseYear: Int
+}
+
+type Mutation {
+    addShow(title: String, year: Int):Show
+}

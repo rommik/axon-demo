@@ -1,0 +1,34 @@
+version: '3.3'
+services:
+  service1:
+    image: rommik-service1:latest
+    networks:
+      - axon-demo
+  graphqlService:
+    image: rommik-graphql:latest
+    ports:
+      - 8080:8080
+    networks:
+      - axon-demo
+  axonserver:
+    image: axoniq/axonserver
+    hostname: axonserver
+    volumes:
+      - type: bind
+        source: ./axon-server/data
+        target: /data
+      - type: bind
+        source: ./axon-server/events
+        target: /eventdata
+      - type: bind
+        source: ./axon-server/config
+        target: /config
+        read_only: true
+    ports:
+      - '8024:8024'
+      - '8124:8124'
+      - '8224:8224'
+    networks:
+      - axon-demo
+networks:
+  axon-demo:
