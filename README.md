@@ -4,6 +4,9 @@ This repository demonstates how to use Axon Server, Axon Based Applications in a
 
 GraphQL is used here for you to issue commands(mutations) or Query Data.
 
+This project is inspired by
+https://github.com/mkralik3/axon-microservices-example
+
 ## Quick Start
 
 ### Generate Docker Images for each service
