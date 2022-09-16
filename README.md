@@ -1,6 +1,10 @@
-# Axon Project
+# Axon Demo Project
 
-## Get Started
+This repository demonstates how to use Axon Server, Axon Based Applications in a microservices & event-driven architecture.
+
+GraphQL is used here for you to issue commands(mutations) or Query Data.
+
+## Quick Start
 
 ### Generate Docker Images for each service
 
@@ -19,4 +23,5 @@ docker-compose up
 
 ### GraphQL 
 
-Open `http://localhost:8080/graphiql`
+1. Open `http://localhost:8080/graphiql`
+2. Create a new Show and then Query your shows.
