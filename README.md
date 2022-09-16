@@ -4,7 +4,6 @@
 
 ### Generate Docker Images for each service
 
-#### Service1
 ```
 ./service1/gradlew jibDockerBuild -p ./service1/ --image=rommik-service1 &&
 ./graphql-server/gradlew jibDockerBuild -p ./graphql-server --image rommik-graphql
@@ -15,3 +14,7 @@
 ```
 docker-compose up
 ```
+
+### GraphQL 
+
+Open `http://localhost:8080/graphiql`
